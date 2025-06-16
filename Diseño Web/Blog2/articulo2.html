@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esquiando en los Alpes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('../imagenes/fondo-montana.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: rgba(0, 0, 0, 0.4); /* Fondo translúcido */
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(5px); /* Efecto vidrio */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+    }
+
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .contenedor {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #ffffffdd;
+      color: #222;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #0c3c74;
+      margin-top: 0;
+    }
+
+    .contenedor img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .contenedor {
+        margin: 15px;
+      }
+    }
+    .articulo {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #ffffffdd;
+      padding: 30px;
+      border-radius: 10px;
+      color: #222;
+    }
+
+    .imagen-articulo {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .texto-articulo p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-top: 20px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav>
+      <a href="../index.html">Volver al Blog</a>
+    </nav>
+
+    <section class="contenedor">
+      <h1>Primera vez en Bariloche</h1>
+      <p><em>25 de julio de 2021</em></p>
+
+      <section class="articulo">
+        <img src="imagenes/VistaCatedral.jpg" alt="Esquiando en los Alpes" class="imagen-articulo" />
+
+        <div class="texto-articulo">
+          <h2>Esquiando en Bariloche</h2>
+
+          <p>Fuimos a esquiar a Argentina con mi familia y elegimos el Cerro Catedral, uno de los centros de esquí más grandes de Sudamérica, ubicado en Bariloche.</p>
+         
+          <p>Desde que llegamos, nos sorprendieron las vistas: montañas cubiertas de nieve, bosques de pinos y un pueblo con arquitectura alpina que parecía sacado de un cuento.</p>
+
+          <p>Durante los días de esquí, disfrutamos de pistas para todos los niveles, desde principiantes hasta avanzados. También probamos la gastronomía local en los refugios de montaña, con chocolates calientes y comidas caseras.</p>
+
+          <p>La experiencia fue única, y sin dudas, un viaje que voy a recordar siempre.</p>
+
+        </div>
+      </section>
+
+    </section>
+
+    <footer>
+      <p>© 2025 Valentino Guaita | Relato personal</p>
+    </footer>
+  </div>
+</body>
+</html>
